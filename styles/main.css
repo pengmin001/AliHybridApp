@@ -1,0 +1,186 @@
+body{
+  background-color: #eee; 
+}
+/*banner*/
+.panel-banner img{
+  width: 100%;
+  vertical-align: middle;
+}
+/*设备列表关闭状态 */
+.device-info-list.close>ul>li{
+  display: none;
+}
+.device-info-list.close .Device-close-hint,.device-info-list.close .device-switch,.device-info-list.close .device-temperature{
+  display: block;
+}
+/*设备数据.device-info-list.close .Device-close-hint,列表*/
+.device-info-list>ul>li{
+  margin-top: 20px;
+  background-color: #fff;
+}
+.device-info-list>ul>li:first-child{
+  margin-top: 0;
+}
+.device-info-list>ul>li:last-child{
+  margin-bottom: 20px;
+}
+.device-info-list>ul>.device-switch{
+  margin-bottom: 0px;
+}
+/*设备温度*/
+.device-temperature{
+  padding:10px 15px 10px 20px;
+  color: #666;
+}
+.device-temperature h3 b{
+  font-weight: normal;
+  font-size: 26.25px;
+  font-family: Arial;
+}
+.device-temperature h3 span{
+  display: inline-block;
+  margin:3px 0 0 5px;
+  padding: 5px 5px 2px;
+  background-color: #ededed;
+  border-radius: 10px;
+  font-weight: normal;
+  font-size: 8.75px;
+  vertical-align: top;
+}
+/*设备温度子菜单*/
+.temperature-sub-nav{
+  padding-top: 10px;
+  font-size: 0;
+}
+.temperature-sub-nav li{
+  display: inline-block;
+  font-size: 14px;
+  line-height: 20px;
+}
+.temperature-sub-nav li:after{
+  padding:0 5px;
+  color: #999;
+  content: "|";
+}
+.temperature-sub-nav li:last-child:after{
+  display: none;
+}
+/*选择加热模式*/
+.device-info-list .device-select-mode{
+  margin-top: 5px;
+}
+
+/*!*设备热水量*!*/
+/*.device-hot-water{*/
+  /*padding-bottom: 10px;*/
+/*}*/
+/*.device-hot-water h5{*/
+  /*position: relative;*/
+  /*padding: 20px 10px 15px 16px;*/
+  /*color: #333;*/
+  /*font-size: 16px;*/
+  /*line-height: 16px;*/
+/*}*/
+.hot-water-num{
+  position: absolute;
+  right:15px;
+  color:#26e5ba;   
+}
+.hot-water-val{
+  display: block;
+  height: 20px;
+  position: relative;
+  margin: 5px 15px 0px;
+  overflow: hidden;
+}
+.hot-water-val:before,.hot-water-val span{
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  background: url("http://gtms01.alicdn.com/tps/i1/TB1.YcyHFXXXXXxXpXXuIWzYVXX-600-14.png") no-repeat;
+  background-size: 100% auto;
+  content: "";
+}
+.hot-water-val span{
+  left:-50%;
+  z-index: 1;
+  background:url("http://gtms02.alicdn.com/tps/i2/TB1ZPcxHFXXXXbIXpXXuIWzYVXX-600-14.png") no-repeat;
+  background-size: 100% auto;
+}
+/*!*热水量少*!*/
+/*.device-hot-water.few .hot-water-val span{*/
+  /*background:url("http://gtms03.alicdn.com/tps/i3/TB1uTZtHFXXXXXBXFXXuIWzYVXX-600-14.png") no-repeat;*/
+  /*background-size:100% auto;*/
+/*}*/
+/*.device-hot-water.few .hot-water-num{*/
+  /*color: #e87712;*/
+/*}*/
+/*!*热水量非常少*!*/
+/*.device-hot-water.very-few .hot-water-val span{*/
+  /*background:url("http://gtms04.alicdn.com/tps/i4/TB1KuIxHFXXXXbzXpXXuIWzYVXX-600-14.png") no-repeat;*/
+  /*background-size:100% auto;*/
+/*}*/
+/*.device-hot-water.very-few .hot-water-num{*/
+  /*color: #951da2;*/
+/*}*/
+/*设备关闭提示*/
+.Device-close-hint{
+  display: none;
+  padding: 40px 0;
+  border-top: 1px solid #eee;
+  background-color: #fff;
+  box-sizing: border-box;
+  color: #999;
+  font-size: 15px;
+  line-height: 22px;
+  text-align: center;
+}
+.Device-close-hint img{
+  width: 95px;
+}
+.Device-close-hint p{
+  margin-top:25px;
+}
+
+/*添加字体*/
+@font-face {
+  font-family: 'alink_iconfont';
+  src: url('//at.alicdn.com/t/font_1439265074_8045158.eot'); /* IE9*/
+  src: url('//at.alicdn.com/t/font_1439265074_8045158.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('//at.alicdn.com/t/font_1439265074_8045158.woff') format('woff'), /* chrome、firefox */
+  url('//at.alicdn.com/t/font_1439265074_8045158.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url('//at.alicdn.com/t/font_1439265074_8045158.svg#alink_iconfont') format('svg'); /* iOS 4.1- */
+}
+.alink_iconfont {
+    font-family: alink_iconfont !important;
+    font-size: 16px;
+}
+@font-face {
+  font-family: 'alink_iconfont_system';
+  src: url('//at.alicdn.com/t/font_1439890748_9459832.eot'); /* IE9*/
+  src: url('//at.alicdn.com/t/font_1439890748_9459832.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('//at.alicdn.com/t/font_1439890748_9459832.woff') format('woff'), /* chrome、firefox */
+  url('//at.alicdn.com/t/font_1439890748_9459832.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url('//at.alicdn.com/t/font_1439890748_9459832.svg#alink_iconfont_system') format('svg'); /* iOS 4.1- */
+}
+.alink_iconfont_system {
+    font-family: alink_iconfont_system !important;
+    font-size: 16px;
+}
+@font-face {
+  font-family: 'alink_iconfont_cd';
+  src: url('//at.alicdn.com/t/font_1439952798_3012831.eot'); /* IE9*/
+  src: url('//at.alicdn.com/t/font_1439952798_3012831.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('//at.alicdn.com/t/font_1439952798_3012831.woff') format('woff'), /* chrome、firefox */
+  url('//at.alicdn.com/t/font_1439952798_3012831.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url('//at.alicdn.com/t/font_1439952798_3012831.svg#alink_iconfont_cd') format('svg'); /* iOS 4.1- */
+}
+.alink_iconfont_cd {
+    font-family: alink_iconfont_cd !important;
+    font-size: 16px;
+}
+
+.ui-load .ui-loadtext i,.ui-load .ui-loadtext span{font-size:14px;}

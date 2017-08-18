@@ -1,0 +1,107 @@
+body{
+	background-color: #eee;
+}
+/*导航栏*/
+.navbar {
+	position: relative;
+	z-index: 500;
+	height: 44px;
+	width: 100%;
+	margin: 0;
+	border-bottom: 1px solid #d6d6d6;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	background: #f8f8f8;
+	color: #00c7b2;
+	font-size: 16px;
+	line-height: 44px;
+	opacity: 0.7;
+	text-align: center;
+}
+.navbar .title{
+	color: #333;
+	font-size: 20px;
+}
+.navbar a{
+	color: #00c7b2;
+}
+.navbar .back{
+	position: absolute;
+	top:0;
+	left: 0px;
+	padding:0 20px;
+}
+.navbar .tools{
+	position: absolute;
+	top:0;
+	right:0px;
+	padding:0 20px;
+}
+/*定时列表*/
+.setTiming>ul>li{
+	margin-top: 20px;
+}
+
+.ui-half-box-ct{
+    transform:none !important;
+}
+
+body .ui-half-box-ct{
+    -webkit-transform: none!important;
+}
+/*定时开关左侧icon改变*/
+.setTiming-switch-select{
+	position: relative;
+}
+.setTiming-switch-select .ui-item-media{
+	opacity: 0;
+}
+.icon-change-box{
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	width: 62px;
+	height: 100%;
+	border-top: 1px solid #eee;
+	border-bottom: 1px solid #eaeaea;
+	background-color: #fff;
+	box-sizing:border-box;
+	text-align: center;
+}
+.setTiming-switch-select .icon-change{
+	position: absolute;
+	top:50%;
+	left:17px;
+	margin-top: -12px;
+	font-size: 24px;
+	color: #00c7b2;
+	font-family: iconfont;
+}
+/*列表右侧文字*/
+.setTiming-switch-select .ui-aftertxt{
+	color: #00c7b2;
+	font-size: 20px;
+}
+.day-list{
+	font-size: 0;
+}
+.day-list li{
+	display: inline-block;
+	padding-right: 5px;
+	color: #999;
+	font-size: 14px;
+}
+.setTiming-operate .ui-aftertxt{
+	display: block;
+	max-width: inherit;
+}
+.setTiming-operate .day-list:before,.setTiming-operate .day-list:after{
+	display: none;
+}
+/*选中时间*/
+.setTiming-time-select{
+	display: none;
+}

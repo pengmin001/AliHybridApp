@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>定时预约</title>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <link rel="stylesheet" href="http://api.alink.aliyun.com/sdk/v1/component.css">
+    <link rel="stylesheet" href="./styles/main.css"></head>
+<body>
+    <!-- 主视图-->
+    <div class="views">
+        <div class="view view-main navbar-fixed">
+            <!-- 页面 -->
+            <div class="pages navbar-through toolbar-through" id="J_PageCont">
+                <!-- 导航栏 -->
+                <div class="navbar navbardevice">
+                    <div class="navbar-inner">
+                        <div class="back">
+                            <a href="#" class="J_deviceback icon-only open-panel"> <i class="iconfont">取消</i>
+                            </a>
+                        </div>
+                        <div class="title sliding contacts-list-header" id="J_deviceName">定时预约</div>
+                        <div class="tools setTimer-define">完成</div>
+                    </div>
+                </div>
+                <div data-page="device" class="page">
+                    <!-- 设置定时 -->
+                    <div class="setTiming">
+                        <ul>
+                            <!-- 开关选择 -->
+                            <li class="setTiming-switch-select">
+                                <div class="icon-change-box">
+                                    <i class="icon-change iconfont">&#x3057;</i>
+                                </div>
+                                <div class="switch-select"></div>
+                            </li>
+                            <!-- 时间选择 -->
+                            <li class="ui-datetime setTiming-time-select">
+                            </li>
+                            <!-- 操作 -->
+                            <li class="setTiming-operate">
+                                <div class="operate"></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </div>
+    <div id="J_datetime"></div>
+</div>
+<!-- build:js -->
+<script src="http://api.alink.aliyun.com/sdk/v2/sdk.js"></script>
+<script src="http://api.alink.aliyun.com/sdk/v1/component.js"></script>
+<!-- <script src="../../components/package/alinkUI.min.js"></script> -->
+<script src="./app.js"></script>
+<!-- endbuild -->
+</body>
+</html>

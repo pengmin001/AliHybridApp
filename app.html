@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>设备控制面板</title>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+
+    <link rel="stylesheet" href="http://gaic.alicdn.com/aic/h5/alpha/components/alinkUI.min.css">
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+    <!-- 主视图-->
+    <div class="views">
+        <div class="view view-main navbar-fixed">
+            <!-- 页面 -->
+            <div class="pages navbar-through toolbar-through" id="J_PageCont">
+                <div data-page="device" class="page">
+                    <!-- banner -->
+                    <section class="panel-wraper panel-banner div_mainpage_bg">
+                        <img src="http://gtms02.alicdn.com/tps/i2/TB1fGc1LXXXXXaBXFXXKanv2pXX-750-320.png" alt="">
+                    </section>
+                    <!-- 设备数据列表 -->
+                    <div class="device-info-list">
+                        <ul>
+                            <!-- 设备温度 -->
+                            <li class="device-temperature">
+                                <h3><b class="temperature-now">--°C</b><span>当前温度</span></h3>
+                                <!-- 设备温度子菜单 -->
+                                <ul class="temperature-sub-nav">
+                                    <li class="WorkStatus">加热中</li>
+                                    <li class="temperature-set">温度设定 --°C</li>
+                                </ul>
+                            </li>
+                            <!-- 设备开关 -->
+                            <li class="device-switch">
+                                <switch class='device-switch'></switch>
+                            </li>
+                            <!-- 加热模式选择 -->
+                            <li class="device-select-mode">
+                                <grid class='heating-mode'></grid>
+                            </li>
+                            <!-- 设置温度 -->
+                            <li class="device-set-temperature">
+                                <div class="ui-slider-item temperature-slider" id="temp_limit"></div>
+                            </li>
+                            <!-- 设备定时预约 -->
+                            <li class="device-timing">
+                            <div class="timing"></div>
+                            </li>
+                        </ul>
+                        <!-- 设备关闭提示 -->
+                        <div class="Device-close-hint">
+                            <img src="http://gtms02.alicdn.com/tps/i2/TB1AV0fLpXXXXaiXXXXxBNK3XXX-218-195.png" alt="设备故障">
+                            <p>当前设备处于关闭状态噢！<br>如需使用请开启电源</p>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </div>
+</div>
+<div class="bind_handle_offnet ui-offNet"></div>
+<script src="http://api.alink.aliyun.com/sdk/v2/sdk.js"></script>
+<script src="http://api.alink.aliyun.com/sdk/v1/component.js"></script>
+
+<script type="text/javascript" src="./app.js"></script>
+
+</body>
+</html>

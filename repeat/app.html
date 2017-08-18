@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>定时预约重复</title>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <!-- build:css -->
+    <!-- <link rel="stylesheet" href="http://api.alink.aliyun.com/sdk/v2/sdk.css"> -->
+    <link rel="stylesheet" href="http://api.alink.aliyun.com/sdk/v1/component.css">
+    <!-- <link rel="stylesheet" href="../../components/package/alinkUI.min.css"> -->
+    <!-- endbuild -->
+    <link rel="stylesheet" href="./styles/main.css"></head>
+<body>
+    <!-- 主视图-->
+    <div class="views">
+        <div class="view view-main navbar-fixed">
+            <!-- 页面 -->
+            <div class="pages navbar-through toolbar-through" id="J_PageCont">
+                <!-- 导航栏 -->
+                <div class="navbar navbardevice">
+                    <div class="navbar-inner">
+                        <div class="back">
+                            <a href="#" class="J_deviceback icon-only open-panel"> <i class="iconfont">取消</i>
+                            </a>
+                        </div>
+                        <div class="title sliding contacts-list-header" id="J_deviceName">重复</div>
+                        <div class="tools repeatList-define">完成</div>
+                    </div>
+                </div>
+                <!-- 重复列表 -->
+                <div class="repeatList"></div>
+            </div>
+        </div>
+    </div>
+    <div id="J_datetime"></div>
+</div>
+<!-- build:js -->
+<script src="http://api.alink.aliyun.com/sdk/v2/sdk.js"></script>
+<script src="http://api.alink.aliyun.com/sdk/v1/component.js"></script>
+<!-- <script src="../../components/package/alinkUI.min.js"></script> -->
+<script src="./app.js?n=1"></script>
+<!-- endbuild -->
+</body>
+</html>

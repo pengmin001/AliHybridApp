@@ -1,0 +1,45 @@
+body{
+  background-color: #eee;
+}
+.views{
+  margin-top: 68px;
+}
+/*定时列表*/
+.timingList{
+
+}
+/*时间标题*/
+.time-title{
+	color: #333;
+	font-size: 14px;
+}
+.time-title b{
+	padding-left: 5px;
+	color: #00c7b2;
+	font-weight: normal;
+	font-size: 20px;
+}
+.time-title b span{
+	padding:0 5px 0 20px;
+	color: #333;
+	font-size: 14px;
+}
+.time-title i{
+	font-style: normal;
+}
+/*天数列表*/
+.day-list{
+	font-size: 0;
+}
+.day-list li{
+	display: inline-block;
+	padding-right: 5px;
+	color: #999;
+	font-size: 14px;
+}
+.day-list li:last-child{
+	padding-right: 0;
+}
+.ui-item-list .day-list:before,.ui-item-list .day-list:after{
+	display: none;
+}
